@@ -29,8 +29,9 @@ const userData = {
 
 
 
-
-appDiv.addEventListener("click", function(){
-    console.log('click');
-})
-
+const username = document.createElement('div');
+username.textContent = userData.name;
+username.style.fontSize = '20px';
+username.style.fontWeight = 'bold';
+username.style.marginTop = '10px';
+container.appendChild(username);
